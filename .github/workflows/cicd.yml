@@ -40,5 +40,5 @@ jobs:
         run: |
             git config --global user.name 'devilUpTech'
             git config --global user.email 'emil.steiner98622@gmail.com'
-            npx gh-pages -d build
+            npx gh-pages -d dist
             
