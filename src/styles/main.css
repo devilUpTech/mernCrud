@@ -1,0 +1,116 @@
+.container .form {
+  display: flex;
+  flex-direction: column;  
+  padding : calc(var(--general-padding) * 5);  
+  border-radius: var(--general-border-radius);
+  margin-bottom : var(--general-margin);
+  background-color: var(--bg-color-second);  
+}
+
+.container .form select {   
+  border : var(--general-border);
+  border-radius: var(--general-border-radius);  
+  padding: var(--general-padding);
+  margin-top: var(--general-margin);
+  color : var(--text-color);
+  background-color: var(--bg-color-fourth);
+  font : inherit;
+}
+  
+.container .form select option {  
+  background-color: var(--bg-color-first);
+  color : var(--text-color);
+  border-radius: var(--general-border-radius);
+}
+
+.container .form select:hover {
+  box-shadow : 0 0 1.2em rgba(70, 70, 70, 0.308);
+}
+
+.container .form select:focus {
+  outline: .1em solid rgba(255, 255, 255, 0.342);
+}
+
+.container .form label {
+  margin-block: var(--general-margin);  
+}
+
+.container .form input {
+  padding: var(--general-padding);
+  border : var(--btn-border);  
+  border-radius: var(--btn-border-radius);  
+  background-color: var(--bg-color-fourth);
+  color : var(--text-color);
+  font : inherit;  
+}
+  
+.container .form input:focus {
+  outline: .1em solid rgba(255, 255, 255, 0.342);
+}
+
+.container .form input :is(
+  :-webkit-autofill, :-webkit-autofill:hover, 
+  :-webkit-autofill:focus,:-webkit-autofill:active) {
+  -webkit-text-fill-color: var(--text-color);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.container .form input::placeholder {
+  color : var(--text-color-second)
+}
+  
+.container .form input:hover {  
+  box-shadow : 0 0 1.2em rgba(70, 70, 70, 0.308);  
+}
+  
+.container .form .form__buttons { 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: var(--general-padding);
+  margin-top: var(--general-margin);
+  transition: border-color 0.25s;
+}
+  
+.container .form .form__buttons input {    
+  display: inline-flex;
+  justify-content: center;
+  width: clamp(5rem, 32%, 32%);
+  padding: calc(var(--general-padding) * 2);
+  margin: calc(var(--general-margin) /2);
+  cursor: pointer;  
+  color : var(--text-color);  
+}
+
+.container .form .form__buttons input:hover {  
+  box-shadow: 0 0 1.2em var(--text-color-highlight-transparent);
+  color : var(--text-color-highlight);  
+}
+
+.container .form .form__buttons input:focus {  
+  outline: none;
+}
+
+.container .form .form__buttons input:active {   
+  transform: scale(0.98);  
+}
+
+.container .form .form__buttons .clear {  
+  background-color : rgba(156, 0, 109, 0.7);
+  box-shadow: 0px 15px 20px rgba(156, 0, 109, 0.3);
+}
+
+.container .form .form__buttons .save {
+  background-color : rgba(0, 119, 79, 0.7);  
+  box-shadow: 0px 15px 20px rgba(0, 119, 79, 0.3);
+}
+  
+.container .form .form__buttons .delete {
+  background-color : rgba(119, 0, 0, 0.7); 
+  box-shadow: 0px 15px 20px rgba(119, 0, 0, 0.3);
+}
+  
+.container .form .form__buttons .update {
+  background-color : rgb(13, 114, 182, 0.7);
+  box-shadow: 0px 15px 20px rgba(13, 114, 182, 0.3);
+}

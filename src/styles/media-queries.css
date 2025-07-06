@@ -1,0 +1,27 @@
+@media only screen and (max-width: 300px) {  
+
+  .container {
+    width : 80vw;    
+    min-width: 8rem;
+  }
+
+  .container .navbar ul {
+    display: flex;
+    flex-direction: column;        
+  }
+  
+  .container .navbar a {
+    width: 100%;
+  }
+
+  .container .form .form__buttons {
+    display: flex;
+    flex-direction: column;
+  }  
+
+  .container .contact-info address a {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}

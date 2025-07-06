@@ -1,0 +1,28 @@
+:root {      
+
+  --bg-color-first : #2b1119;
+  --bg-color-second :  #20202093;
+  --bg-color-third : #0f0f0f8a;
+  --bg-color-fourth : #0f0f0f8a;  
+
+  --bg-image : linear-gradient(rgb(73, 33, 45), rgb(92, 17, 43));
+  
+  --text-color : #d4d4d4;
+  --text-color-second : #aaaaaa7e;
+  --text-color-highlight : #ffffff;
+  --text-color-highlight-transparent : #ffffff17;
+  --text-color-special : rgba(255,165,0);
+
+  --general-padding : 0.2em; /* rem */
+  --general-margin : 0.8em;
+  --general-border : 0.6em solid transparent;
+  --general-border-radius : 1em; /* rem */
+
+  --btn-border : 0.6em solid transparent; /* rem */
+  --btn-border-radius : 0.8em; /* rem */
+    
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size : 1em; /* rem */
+  --font-weight : 500;  
+  
+}

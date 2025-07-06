@@ -1,0 +1,78 @@
+.container .title {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding : calc(var(--general-padding) * 2);
+  margin-bottom: var(--general-margin);
+  border-radius: var(--general-border-radius);
+  background-color: var(--bg-color-third);
+  gap : 0.5rem;
+}
+
+.container .title img {    
+  animation-name: title-icon-animation;
+  animation-duration: 5s;
+  animation-delay: 0.65s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.container .title h1 {
+  color :rgb(255, 255, 255);
+  font-size: calc(var(--font-size) * 1.2);
+  font-style: italic;
+  text-shadow: 0 0 0.1rem rgb(160, 160, 160);
+  animation-name: title-animation;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.container .title h1::after {  
+  content:'Basic CRUD'; 
+  animation: title-animation linear both 1.0s;  
+  animation-iteration-count: 1;  
+}
+
+.container .subtitle h2 {
+  color: var(--text-color-special);
+  font-size: calc(var(--font-size) * 1.1);
+  margin-bottom: var(--general-margin);
+  animation-name: subtitle-animation;
+  animation-duration: 5s;
+  animation-delay: 1.0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+}
+
+.container .navbar {  
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--general-margin);
+  background-color: var(--bg-color-second);
+  padding: var(--general-padding);
+  border-radius: var(--general-border-radius);
+}
+
+.container .navbar :is(ul, li) {
+  display: flex;
+}
+
+.container .navbar a {     
+  margin : calc(var(--general-margin) / 2);
+  padding : calc(var(--general-padding) * 4);
+  border-radius: var(--btn-border-radius);
+  color: var(--text-color);
+  background-color: var(--bg-color-third);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.container .navbar a:hover {     
+  border-radius: calc(var(--general-border-radius) * 6.25);
+  color: var(--text-color-highlight);
+  transition: border-radius 0.5s;
+  cursor: pointer;
+}

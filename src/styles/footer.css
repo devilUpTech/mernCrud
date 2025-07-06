@@ -1,0 +1,40 @@
+.container .contact-info {
+  padding: var(--general-padding);  
+  margin-top : calc(var(--general-margin) / 2);  
+}
+
+.container .contact-info time {
+  display: flex;
+  justify-content: center;
+}
+
+.container .contact-info address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--general-margin);
+  border-radius: var(--general-border-radius);
+  padding: calc(var(--general-padding) * 2);
+  background-color: var(--bg-color-third);
+  color : var(--text-color);
+}
+
+.container .contact-info address:hover {
+  box-shadow : 0 0 1.2em rgba(70, 70, 70, 0.308);
+}
+
+.container .contact-info address p {    
+  padding: var(--general-padding);
+  margin-bottom: 0.3rem;
+}
+
+.container .contact-info address a {      
+  color: var(--text-color-highlight);
+  margin-inline: calc(var(--general-margin) / 2);
+}
+
+.container .contact-info address a:hover {  
+  text-shadow: 0 0 0.1rem rgb(200, 200, 200);
+}
+  
+ 
