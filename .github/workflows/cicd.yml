@@ -37,9 +37,8 @@ jobs:
           path: build
 
       - name: Deploy on GitHub
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-            github_token: ${{secrets.GITHUB_TOKEN}}
-            publish_dir: ./dist
-            publish_branch: gh-pages
+        run: |
+            git config --global user.name 'devilUpTech'
+            git config --global user.email 'emil.steiner98622@gmail.com'
+            npx gh-pages -d build
             
