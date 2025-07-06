@@ -28,7 +28,7 @@ const Header = () => {
             </section>
 
             <section className='subtitle'>
-                <h2>React Typescript MongoDB</h2>
+                <h2>React Typescript Node MongoDB</h2>
             </section>
 
             <Navbar/>
